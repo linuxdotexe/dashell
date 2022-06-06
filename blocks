@@ -1,0 +1,10 @@
+#!/bin/bash
+
+esc="\e["
+
+for i in `seq 10`
+do
+    n=$(shuf -i 30-37 -n 1)
+    echo -ne "${esc}${n}m■ "
+done
+echo ""
